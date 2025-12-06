@@ -8,10 +8,10 @@
   $: isDay = $roomStates.svelte === 'day';
 
   const buttons = [
-    { id: 'react', img: '/ui/switch-r.png' },
-    { id: 'vue', img: '/ui/switch-v.png' },
-    { id: 'svelte', img: '/ui/switch-s.png' },
-    { id: 'solid', img: '/ui/switch-so.png' },
+    { id: 'react', img: '/ui/switch-r.webp' },
+    { id: 'vue', img: '/ui/switch-v.webp' },
+    { id: 'svelte', img: '/ui/switch-s.webp' },
+    { id: 'solid', img: '/ui/switch-so.webp' },
   ];
 </script>
 
@@ -30,7 +30,7 @@
 
   <!-- Room Label -->
   <img 
-    src="/ui/label-svelte.png" 
+    src="/ui/label-svelte.webp" 
     alt="Svelte Label" 
     class="absolute top-8 right-2/3 transform -translate-x-1/2 z-10 w-32" 
   />

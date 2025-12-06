@@ -4,29 +4,31 @@ import ReactRoom from '../components/rooms/ReactRoom';
 import VueRoom from '../components/rooms/VueRoom.vue';
 import SvelteRoom from '../components/rooms/SvelteRoom.svelte';
 import SolidRoom from '../components/rooms/SolidRoom';
+import MusicPlayer from '../components/MusicPlayer.svelte';
 ---
 
 <Layout>
+	<MusicPlayer client:load />
 	<div class="grid grid-cols-2 grid-rows-2 h-screen w-screen bg-slate-900">
 		<ReactRoom 
 			client:only="react" 
-			dayImage="/rooms/react-day.png" 
-			nightImage="/rooms/react-night.png" 
+			dayImage="/rooms/react-day.webp" 
+			nightImage="/rooms/react-night.webp" 
 		/>
 		<VueRoom 
 			client:visible 
-			dayImage="/rooms/vue-day.png" 
-			nightImage="/rooms/vue-night.png" 
+			dayImage="/rooms/vue-day.webp" 
+			nightImage="/rooms/vue-night.webp" 
 		/>
 		<SvelteRoom 
 			client:only="svelte" 
-			dayImage="/rooms/svelte-day.png" 
-			nightImage="/rooms/svelte-night.png" 
+			dayImage="/rooms/svelte-day.webp" 
+			nightImage="/rooms/svelte-night.webp" 
 		/>
 		<SolidRoom 
 			client:visible 
-			dayImage="/rooms/solid-day.png" 
-			nightImage="/rooms/solid-night.png" 
+			dayImage="/rooms/solid-day.webp" 
+			nightImage="/rooms/solid-night.webp" 
 		/>
 	</div>
 </Layout>
