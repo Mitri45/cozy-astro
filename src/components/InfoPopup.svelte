@@ -139,11 +139,6 @@
     margin: 0;
   }
 
-  ul {
-    padding-left: 1.5rem;
-    margin: 0;
-  }
-
   li {
     margin-bottom: 0.5rem;
   }

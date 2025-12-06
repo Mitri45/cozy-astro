@@ -11,22 +11,22 @@ import MusicPlayer from '../components/MusicPlayer.svelte';
 	<MusicPlayer client:load />
 	<div class="grid grid-cols-2 grid-rows-2 h-screen w-screen bg-slate-900">
 		<ReactRoom 
-			client:only="react" 
+			client:load 
 			dayImage="/rooms/react-day.webp" 
 			nightImage="/rooms/react-night.webp" 
 		/>
 		<VueRoom 
-			client:visible 
+			client:load 
 			dayImage="/rooms/vue-day.webp" 
 			nightImage="/rooms/vue-night.webp" 
 		/>
 		<SvelteRoom 
-			client:only="svelte" 
+			client:load 
 			dayImage="/rooms/svelte-day.webp" 
 			nightImage="/rooms/svelte-night.webp" 
 		/>
 		<SolidRoom 
-			client:visible 
+			client:load 
 			dayImage="/rooms/solid-day.webp" 
 			nightImage="/rooms/solid-night.webp" 
 		/>
