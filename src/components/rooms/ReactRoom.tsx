@@ -35,7 +35,7 @@ export default function ReactRoom({ dayImage, nightImage }: Props) {
       <img 
         src="/ui/label-react.webp" 
         alt="React Label" 
-        className="absolute top-8 right-2/3 transform -translate-x-1/2 z-10 w-32" 
+        className={`absolute top-8 right-2/3 transform -translate-x-1/2 z-10 w-32 transition-all duration-500 ${isDay ? '' : 'brightness-125 drop-shadow-[0_0_5px_rgba(255,255,255,0.6)]'}`}
       />
 
       {/* Control Bar */}

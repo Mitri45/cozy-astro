@@ -35,7 +35,8 @@ const buttons = [
     <img 
       src="/ui/label-vue.webp" 
       alt="Vue Label" 
-      class="absolute top-8 right-2/3 transform -translate-x-1/2 z-10 w-32" 
+      class="absolute top-8 right-2/3 transform -translate-x-1/2 z-10 w-32 transition-all duration-500"
+      :class="{ 'brightness-125 drop-shadow-[0_0_5px_rgba(255,255,255,0.6)]': $roomStates.vue === 'night' }"
     />
 
     <!-- Control Bar -->

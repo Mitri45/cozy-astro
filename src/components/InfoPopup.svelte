@@ -151,4 +151,21 @@
   a:hover {
     text-decoration: none;
   }
+
+  @media (max-width: 768px) {
+    .info-container {
+      bottom: 1rem;
+      right: 1rem;
+    }
+    .info-btn {
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+    }
+    .popup {
+      bottom: 4.5rem;
+      right: 1rem;
+      width: calc(100vw - 2rem);
+    }
+  }
 </style>

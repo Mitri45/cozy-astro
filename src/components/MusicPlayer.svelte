@@ -132,4 +132,48 @@
   button:hover {
     background-color: #f0f0f0;
   }
+
+  @media (max-width: 768px) {
+    .music-player-container {
+      position: sticky;
+      top: 0;
+      bottom: auto;
+      left: 0;
+      transform: none;
+      width: 100%;
+      padding: 0.5rem;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(5px);
+      border-bottom: 1px solid #333;
+    }
+
+    .music-player {
+      width: 100%;
+      max-width: none;
+      padding: 0.5rem;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: none;
+      border: 2px solid #222;
+    }
+
+    .display-screen {
+      margin-bottom: 0;
+      flex: 1;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .controls {
+      flex: 0 0 auto;
+    }
+
+    .controls button {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.8rem;
+    }
+  }
 </style>
