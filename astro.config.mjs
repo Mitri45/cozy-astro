@@ -9,6 +9,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://cozy-astro.madeby.dev',
   integrations: [
     react({
       include: ['**/React*.tsx', '**/React*.jsx']
