@@ -1,11 +1,33 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ReactRoom from '../components/rooms/ReactRoom';
+import VueRoom from '../components/rooms/VueRoom.vue';
+import SvelteRoom from '../components/rooms/SvelteRoom.svelte';
+import SolidRoom from '../components/rooms/SolidRoom';
 ---
 
 <Layout>
-	<div class="p-4">
-		<h1 class="text-2xl font-bold">Astro Cozy</h1>
-		<p>Project initialized with React, Vue, Svelte, Solid, and Nanostores.</p>
+	<div class="grid grid-cols-2 grid-rows-2 h-screen w-screen bg-slate-900">
+		<ReactRoom 
+			client:only="react" 
+			dayImage="/rooms/react-day.png" 
+			nightImage="/rooms/react-night.png" 
+		/>
+		<VueRoom 
+			client:visible 
+			dayImage="/rooms/vue-day.png" 
+			nightImage="/rooms/vue-night.png" 
+		/>
+		<SvelteRoom 
+			client:only="svelte" 
+			dayImage="/rooms/svelte-day.png" 
+			nightImage="/rooms/svelte-night.png" 
+		/>
+		<SolidRoom 
+			client:visible 
+			dayImage="/rooms/solid-day.png" 
+			nightImage="/rooms/solid-night.png" 
+		/>
 	</div>
 </Layout>
 
