@@ -1,6 +1,6 @@
 ---
-import '../styles/global.css';
-import InfoPopup from '../components/InfoPopup.svelte';
+import "../styles/global.css";
+import InfoPopup from "../components/InfoPopup.svelte";
 
 interface Props {
 	title?: string;
@@ -8,10 +8,10 @@ interface Props {
 	image?: string;
 }
 
-const { 
-	title = "Astro Cozy", 
+const {
+	title = "Astro Cozy",
 	description = "A cozy virtual space featuring interactive rooms built with React, Vue, Svelte, and SolidJS. Relax with lo-fi music and switch between day and night modes.",
-	image = "/rooms/react-day.webp"
+	image = "/rooms/react-day.webp",
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -54,6 +54,11 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 	<body>
 		<InfoPopup client:idle />
 		<slot />
+		<footer class="fixed bottom-4 w-full text-center pointer-events-none z-50">
+			<a href="https://madeby.dev/" target="_blank" rel="noopener noreferrer" class="text-[10px] text-white/50 hover:text-white transition-colors pointer-events-auto" style="font-family: 'Press Start 2P', cursive;">
+				madeby.dev
+			</a>
+		</footer>
 	</body>
 </html>
 
